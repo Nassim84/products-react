@@ -1,0 +1,27 @@
+.navigation {
+	display: flex;
+	justify-content: space-around;
+	background-color: rgba(78, 24, 75, 0.4);
+	padding: 1rem 0;
+}
+
+.navigation ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.navigation li {
+	margin: 0 1rem;
+}
+
+.navigation a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+	color: #ccc;
+}

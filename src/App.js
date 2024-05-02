@@ -13,6 +13,8 @@ import Home from "./Home";
 import ProductList from "./ProductList";
 import CreateProduct from "./CreateProduct";
 import ProductNavigation from "./ProductNavigation";
+import ProductDetails from "./ProductDetails";
+import NotFound from "./NotFound";
 
 function App() {
 	return (
@@ -33,6 +35,7 @@ function App() {
 							}
 						/>
 						<Route path="all" element={<ProductList />} />
+						<Route path=":id" element={<ProductDetails />} />
 						<Route
 							path="create"
 							element={
@@ -42,8 +45,8 @@ function App() {
 								</>
 							}
 						/>
-						<Route path="*" element={<div>Page non trouvée</div>} />
 					</Route>
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 			</div>
 		</Router>

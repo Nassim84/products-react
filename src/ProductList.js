@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import axios from "axios";
 import "./css/ProductList.css";
 import Loader from "./Loader";
@@ -35,7 +36,9 @@ const ProductList = () => {
 					<h1>Liste des produits</h1>
 					{products.map((product) => (
 						<div key={product.id} className="product-card">
-							<h2>{product.title}</h2>
+							<Link to={`/products/${product.id}`}>
+								<h2>{product.title}</h2>
+							</Link>
 							<p>{product.description}</p>
 							<p className="price">Prix : {product.price} $</p>
 							<img src={product.image} alt={product.title} />

@@ -16,3 +16,7 @@
 .product-navigation a:hover {
 	color: #666;
 }
+
+.product-navigation {
+	background-color: rgba(255, 41, 45, 0.3);
+}

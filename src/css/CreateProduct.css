@@ -1,0 +1,92 @@
+/* Importation de la police Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Styles généraux */
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: #f5f5f5;
+}
+
+/* Styles du formulaire */
+form {
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 30px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #333;
+}
+
+form input[type="text"],
+form input[type="number"] {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 400;
+	color: #333;
+	transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="number"]:focus {
+	border-color: #333;
+}
+
+form button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #333;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+form button:hover {
+	background-color: #555;
+}
+
+/* Styles des emojis */
+form label::before {
+	content: "";
+	display: inline-block;
+	margin-right: 5px;
+	font-size: 24px;
+	vertical-align: middle;
+}
+
+form label[for="title"]::before {
+	content: "\1F9F0"; /* Emoji "carton d'expédition" */
+}
+
+form label[for="description"]::before {
+	content: "\1F4DD"; /* Emoji "feuille de papier et stylo" */
+}
+
+form label[for="price"]::before {
+	content: "\1F4B5"; /* Emoji "dollar" */
+}
+
+form label[for="category"]::before {
+	content: "\1F4C4"; /* Emoji "étiquette" */
+}
+
+form label[for="image"]::before {
+	content: "\1F4F7"; /* Emoji "appareil photo" */
+}
